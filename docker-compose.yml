@@ -1,0 +1,8 @@
+namecheap-api:
+        container_name: namecheap-api
+        image: namecheap-api
+	build:
+		context: . 
+		dockerfile: Dockerfile
+	env_file:
+		- ./config.env
